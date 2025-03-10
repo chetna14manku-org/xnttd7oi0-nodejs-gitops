@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: xnttd7oi0-nodejs-gitops
+  description: This is GitOps manifest for xnttd7oi0-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=xnttd7oi0-nodejs
+    backstage.io/kubernetes-id: xnttd7oi0-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    github.com/project-slug: chetna14manku-org/xnttd7oi0-nodejs-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:xnttd7oi0-nodejs

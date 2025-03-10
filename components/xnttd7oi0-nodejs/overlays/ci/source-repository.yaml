@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: xnttd7oi0-nodejs-repository
+spec:
+  url: https://github.com/chetna14manku-org/xnttd7oi0-nodejs
